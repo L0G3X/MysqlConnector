@@ -25,7 +25,7 @@ void CMysqlConnector::Open()
 	is_connection_opened = true;
 }
 
-void CMysqlConnector::Close() const
+void CMysqlConnector::Close()
 {
 	if (!is_connection_opened)
 		return;
@@ -33,6 +33,7 @@ void CMysqlConnector::Close() const
 	if (is_res_allocated)
 		mysql_free_result(_sql_res);
 	mysql_close(p_connection);
+	is_connection_opened = false;
 }
 
 std::vector<MYSQL_ROW> CMysqlConnector::ExecuteQuery(char* sql)
