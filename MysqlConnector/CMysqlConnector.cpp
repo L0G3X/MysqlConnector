@@ -15,6 +15,8 @@ void CMysqlConnector::Initialize(MysqlConnectionInfo connection_info)
 
 void CMysqlConnector::Open()
 {
+	if (is_connection_opened)
+		return;
 	p_connection = mysql_real_connect(&_connection, _connection_info._host, _connection_info._uid, _connection_info._pwd, _connection_info._db, 3306, nullptr, 0);
 	if (!p_connection)
 		throw std::exception("Failed to connect to server");
