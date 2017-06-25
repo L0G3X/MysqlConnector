@@ -2,13 +2,11 @@
 
 
 ## How to build
----------------
 To build this project, u have to install mysql server (ms windows) 
 and link mysql's include dir path and lib dir path to project. 
 
 
 ## Sample code
-----------------
 ```C++
 #include <iostream>
 #include <MysqlConnector.h>
@@ -38,8 +36,6 @@ int main() {
 ```
 
 ## Returned variable types from functions
----------------------------------
-
 CMysqlConnector::Initialize : void
 
 CMysqlConnector::Open : void
