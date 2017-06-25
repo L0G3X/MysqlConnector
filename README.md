@@ -11,7 +11,7 @@ and link mysql's include dir path and lib dir path to project.
 ----------------
 ```C++
 #include <iostream>
-#include "MysqlConnector.h"
+#include <MysqlConnector.h>
 
 #pragma comment(lib, "MysqlConnector.lib")
 
