@@ -3,7 +3,7 @@
 
 ## How to build
 ---------------
-to build this project, u have to install mysql server (ms windows) 
+To build this project, u have to install mysql server (ms windows) 
 and link mysql's include dir path and lib dir path to project. 
 
 
@@ -37,7 +37,7 @@ int main() {
 }
 ```
 
-## returned variables from functions
+## Returned variable types from functions
 ---------------------------------
 
 CMysqlConnector::Initialize : void
