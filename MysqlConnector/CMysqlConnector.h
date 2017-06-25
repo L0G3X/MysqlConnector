@@ -12,7 +12,7 @@ public:
 	void Initialize(MysqlConnectionInfo connection_info);
 	void Open();
 	void Close();
-	std::vector<MYSQL_ROW> ExecuteQuery(char* sql);
+	std::vector<MYSQL_ROW> ExecuteQuery(const char* sql);
 
 private:
 	MYSQL *p_connection;
@@ -21,6 +21,6 @@ private:
 	MYSQL_ROW _sql_row;
 	MysqlConnectionInfo _connection_info;
 
-	bool is_res_allocated;
-	bool is_connection_opened;
+	bool _is_res_allocated;
+	bool _is_connection_opened;
 };
