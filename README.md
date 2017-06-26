@@ -4,7 +4,9 @@
 ## How to build
 To build this project, u have to install mysql server (ms windows) 
 and link mysql's include dir path and lib dir path to project. 
-
+<br/><br/>
+프로젝트를 빌드하기위해서는, Mysql server를 설치하여 폴더안에있는 include폴더와 lib폴더를
+프로젝트에 링크시킨 후 빌드하면 됩니다. (Lib파일로 빌드후 다른 프로젝트에 이식하십시오.)
 
 ## Sample code
 ```C++
@@ -35,7 +37,7 @@ int main() {
 }
 ```
 
-## Returned variable types from functions
+## Return type of functions
 CMysqlConnector::Initialize : void
 
 CMysqlConnector::Open : void
