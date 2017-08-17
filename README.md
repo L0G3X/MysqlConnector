@@ -22,9 +22,9 @@ int main() {
     connector.Open();
     auto sql = "select * from table";
     auto result = connector.ExecuteQuery(sql):
-    for(auto val : result) {
-        std::cout<<val[0]<<std::endl; 
-        // val[N] : Nth column's value. If value is NULL, val[N] returns nullptr. 
+    for(auto row : rows) {
+        std::cout<<row[0]<<std::endl; 
+        // row[N] : Nth column's value. If value is NULL, row[N] returns nullptr. 
     }
   }
   catch (std::exception &e){
